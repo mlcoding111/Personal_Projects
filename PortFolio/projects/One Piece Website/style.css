@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+#op-logo{
+    position: absolute;
+    left: 40%;
+    margin: 20px 0;
+    width: 400px;
+}
+
+#luffy-logo {
+    top: 20%;
+    left: 60%;
+    position: absolute;
+   
+}
+
+/*-------- HEADER -------*/
+
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url("img/backg.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+   
+}
+
+h1, h2{
+    letter-spacing: 4px;
+    word-spacing: 4px;
+    transition: font-size 0.5s; 
+}
+
+
+h1{
+    font-size: 5em;
+    color: dodgerblue;
+    text-align: center;    
+    opacity: 0;
+}
+
+h1:after{ 
+    display: block;
+    height: 4px;
+    background-color: #2980b9;
+    width: 15%;
+    content: " ";
+    margin: 5px auto;    
+}
+
+h3 {
+    text-align: center;
+    font-size: 180%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+h3:after{
+    display: block;
+    content: " ";
+    background-color: dodgerblue;
+    width: 15%;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+#current-time{
+    color: #fff;
+    float: right;
+    margin: 10px;
+    position: fixed;
+ }
+
+ .intro-text {
+    font-size: 125%;
+    color: white;
+    width: 65%;
+    margin: 150px 100px;
+    
+}
+
+
+/*---------- BUTTON -----------*/
+
+.main-btn {
+    position: absolute;
+    top: 38%;
+    left: 4%;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+
+.btn:link,
+.btn:visited{   
+    padding: 10px 25px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
+    font-size: 115%;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    margin-left: 20px;
+    background-color: dodgerblue;
+    border: 1px solid dodgerblue;
+    color: #fff;    
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid dodgerblue;
+    color: #fff;    
+    margin-left: 20px;
+}
+
+.btn-full:active,
+.btn-full:hover{
+    background-color: #0065c8;
+    border: 1px solid #0065c8;
+    color: #fff;    
+}
+
+.btn-ghost:active,
+.btn-ghost:hover{  
+    background-color: #0065c8;
+    border: 1px solid #0065c8;
+    color: #fff;    
+}
+
+/*---------- MAIN-NAV -----------*/
+
+.main-nav {
+    position: absolute;
+    left: 65%;
+    top: 1%;
+    width: 600px;
+    
+}
+
+.main-nav li{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.main-nav a:link,
+.main-nav a:visited{
+    text-decoration: none;
+    color: #fff;
+    font-size: 120%;
+    font-weight: 400;
+    transition: border 0.5s;
+}
+
+.main-nav a:active,
+.main-nav a:hover{
+    border-bottom: 2px solid dodgerblue;
+    cursor: pointer;
+}
+
+/* --------- SECTION FEATURES ---------*/
+
+.long-copy {
+    line-height: 145%;
+    width: 75%;
+    margin-left: 28%;
+    font-weight: 300;
+}
+
+.section-features {
+  padding: 50px;
+}
+
+.section-image {
+    padding: 0;
+}
+
+.images-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.images-showcase li{
+    display: block;
+    width: 25%;
+    float: left;
+}
+
+.mugiwara-image {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.mugiwara-image img{
+    opacity: 0.7;
+  
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+.mugiwara-image img:hover{
+    transform: scale(1.03);
+    opacity: 1;
+}

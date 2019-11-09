@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+canvas{
+    border: 2px solid white;
+}
+
+body{
+    background-color: rgb(51, 51, 51);
+}
+
+#info-text{
+    position: absolute;
+    margin: 20px 20px;
+    color: #fff;
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 1.8em;
+}
+
+#block-count{
+    position: absolute;
+    color: #fff;
+    right: 0;
+    margin: 20px 30px;
+}
+
+#start-button:link,
+#start-button:visited{
+    position: absolute;
+    color: #fff;
+    font-family: 'Lato';
+    font-weight: 500;
+    font-size: 3em;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s;
+}
+
+#start-button:active,
+#start-button:hover{
+    font-size: 3.5em;
+    box-shadow: 0 6px 0px -3px white;
+    border-radius: 15px;
+}

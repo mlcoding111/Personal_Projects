@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Drawing App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas></canvas>
+
+    <div class="menu-wrap">
+        <h1>Menu</h1>
+        <div class="btn-wrap">
+            <div class="btn-row-1">
+                <button id="orange-btn" onclick="orange_clicked()"></button>
+                <button id="blue-btn" onclick="blue_clicked()"></button>
+                <button id="red-btn" onclick="red_clicked()"></button>
+                <button id="yellow-btn" onclick="yellow_clicked()"></button>
+                <canvas id="choice-canvas"></canvas>
+            </div>
+            <div class="btn-row-2">
+                <button id="pink-btn" onclick="pink_clicked()"></button>
+                <button id="green-btn" onclick="green_clicked()"></button>
+                <button id="purple-btn" onclick="purple_clicked()"></button>
+                <button id="white-btn" onclick="white_clicked()"></button>
+            </div>
+            <p><span id="current-color-static">Current color </span><br><span id="current-color"></span></p>
+
+        </div>
+        <p id="demo-r">Radius :</p><span id="demo">0</span>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="60" value="15" class="slider" id="myRange">
+        </div>
+
+        <p> <button id="clear-text" onclick="clearAll()">Clear</button> </p>
+    </div>
+
+    <div class="custom-select" style="width:200px;">
+        <select id="draw-mode">
+            <option value="0">Circle</option>
+            <option value="1">Line</option>
+        </select>
+    </div>
+    <div class="custom-info-wrap">
+        <ul class="custom-info">
+            <li><span class="info-text">Mouse Hover : </span><span id="mouse-hover">NAN</span></li>
+            <li><span class="info-text">Mouse Moving : </span><span id="mouse-moving">NAN</span></li>
+            <li><span class="info-text">Mouse Drawing : </span><span id="mouse-drawing">NAN</span></li>
+            <li><span class="info-text">Mouse Coords : </span><span id="mouse-coords">NAN</span></li>
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

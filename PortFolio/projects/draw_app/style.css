@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;    
+}
+
+canvas{
+    position: absolute;
+    border: 1px solid black;
+}
+
+.custom-info-wrap{
+    position: absolute;
+    top: 58%;
+
+}
+
+.custom-info{
+    font-size: 1.5em;
+    margin: 15px;
+}
+
+.custom-info li{
+    margin: 5px auto;
+    list-style: none;
+}
+
+.custom-select{
+    position: absolute;
+    margin: 20px 10px;
+}
+
+#choice-canvas{
+    top: 70%;
+    width: 60%;
+    height: 15%;
+    left: 10%;
+}
+
+.btn-wrap{
+
+    margin-top: 15%;
+    width: 60%;
+}
+
+p{
+    font-weight: bold;
+    font-size: 1.1em; 
+    text-align: center;    
+}
+
+#clear-text{
+   position: absolute;
+   margin-top: 40%;
+   left: 13%;
+   font-size: 1.5em;    
+   height: 10%;
+   width: 70%;
+}
+
+#clear-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    border: none;
+    color: #000;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    outline: none;
+}
+
+#clear-text:hover{
+    background-color: red;
+}
+
+#current-color-static{
+    border-bottom: 1px solid blue;
+    font-size: 1.2em;
+}
+
+h1{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    margin-top: 20px;    
+}
+
+button{
+    border: 1px solid black;
+    padding: 5px 5px;
+    display: inline-block;
+    margin: 15px 5px;
+    height: 30px;
+    width: 60px;
+    transition: all 0.1s ease 0s;
+    outline: none;
+}
+
+button:active,
+button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    opacity: 1;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+}
+
+.menu-wrap{
+    opacity: 0.6;
+    position: absolute;
+    background-color: rgb(117, 117, 117, 0.6);
+    height: 55%; 
+   
+    width: 15%;
+    border: 1px solid black;
+}
+
+.slidercontainer{
+    width: 100%;
+   
+}
+
+
+
+#demo{
+    position: absolute;
+    left: 66%;
+    top: 58%;
+    color: red;
+}
+#demo-r{
+    position: absolute;
+    left: 60%;
+    top: 50%;
+}
+
+.slider {
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+    transform: rotate(270deg);
+    position: absolute;
+    left: 40%;
+    top: 50%;
+  }
+
+.menu-wrap:active,
+.menu-wrap:hover{
+    opacity: 0.8;
+}
+
+#orange-btn{
+    background-color: orange;
+}
+#blue-btn{
+    background-color: blue;
+}
+#red-btn{
+    background-color: red;
+}
+#yellow-btn{
+    background-color: yellow;
+}
+#pink-btn{
+    background-color: rgb(250, 90, 202);
+}
+#purple-btn{
+    background-color: purple;
+}
+#green-btn{
+    background-color: green;
+}
+#white-btn{
+    background-color: white;
+}
+
+#mouse-hover{
+    color: green;
+    text-transform: uppercase;
+}
+
+#mouse-moving{
+    color: green;
+    text-transform: uppercase;
+}
+#mouse-drawing{
+    color: green;
+    text-transform: uppercase;
+}
+#mouse-coords{
+    color: green;
+    text-transform: uppercase;
+}

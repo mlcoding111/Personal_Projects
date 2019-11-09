@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="ressources/css/style.css">
+    <link rel="stylesheet" href="ressources/css/Grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arapey:400,400i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="ressources/css/ionicons.css">
+
+    <title></title>
+</head>
+
+<body>
+    <div id="time">
+        TIME HERE
+    </div>
+
+    <nav>
+        <div class="media-player-wrap">
+            <ul class="media-player">
+
+                <li>
+                    <ion-icon name="square" id="stop"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon name="pause" id="pause" onclick="yo.stop()"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon name="play" id="play" onclick="yo.play()"></ion-icon>
+                </li>
+                <li>
+                    <div class="media-text">
+                        <p class="now-playing"></p>
+                    </div>
+                </li>
+                <!-- 
+                <li>
+                        <div class="next-prev-wrap">
+                                <li><ion-icon name="arrow-round-back"></ion-icon></li>
+                                <li><ion-icon name="arrow-round-forward"></ion-icon></li>
+                        </div>
+                       
+                </li>
+                -->
+
+
+
+            </ul>
+
+        </div>
+
+        <div class="container">
+
+
+            <ul class="main-nav">
+                <img src="ressources/img/kenny-logo.png">
+                <li><a href="#section-intro">intro</a></li>
+                <li><a href="#section-wrap">projects</a></li>
+                <li><a href="#">sections</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+
+
+    </nav>
+    <div class="row">
+        <div class="img-container">
+            <img src="ressources/img/first-img.jpg">
+            <!--  <img src="ressources/img/setup.jpg">-->
+        </div>
+    </div>
+    <div id="section-wrap">
+
+        <section class="section-projects">
+
+            <ul class="projects-showcase">
+
+                <h2>Projects</h2>
+
+                <li>
+                    <figure class="projects-img">
+                        <div class="text-wrap">
+                            <h3>Paint</h3>
+                        </div>
+                        <a href="projects/draw_app/index.html" target="_blank"><img src="ressources/img/paint.jpg"></a>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="projects-img">
+                        <div class="text-wrap">
+                            <h3>Ball Generator</h3>
+                        </div>
+                        <a href="projects/cv0.1/index.html" target="_blank"><img src="ressources/img/ballgame.png"></a>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="projects-img">
+                            <div class="text-wrap">
+                            <h3>Omnifood</h3>
+                            </div>
+                        <a href="projects/Real Omni/index.html" target="_blank"><img src="ressources/img/meat-food.jpg"></a>
+                    </figure>
+                </li>
+
+                <li>
+                    <figure class="projects-img">
+                            <div class="text-wrap">
+                                    <h3>Canvas Shooter</h3>
+                                    </div>
+                                    <a href="projects/Jumper/index.html" target="_blank"><img src="ressources/img/jumper.jpg"></a>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="projects-img">
+                            <div class="text-wrap">
+                                    <h3>Awakening Website</h3>
+                                    </div>
+                                    <a href="projects/Awekening/index.html" target="_blank"><img src="ressources/img/awakening.jpg"></a>
+                    </figure>
+                </li>
+                <li>
+                    <figure class="projects-img"> 
+                            <div class="text-wrap">
+                            <h3>Gunner</h3>
+                            </div>
+                            <a href="projects/Gunner/index.html" target="_blank"><img src="ressources/img/gunner.jpg"></a>
+                    </figure>
+                </li>
+                <li>
+                        <figure class="projects-img"> 
+                                <div class="text-wrap">
+                                <h3>One Piece</h3>
+                                </div>
+                                <a href="projects/One Piece Website/index.html" target="_blank"><img src="ressources/img/op.jpg"></a>
+                        </figure>
+                    </li>
+                    <li>
+                            <figure class="projects-img"> 
+                                    <div class="text-wrap">
+                                    <h3>Smooth Follow</h3>
+                                    </div>
+                                    <a href="projects/Matrix/index.html" target="_blank"><img src="ressources/img/codee.jpg"></a>
+                            </figure>
+                        </li>
+                        <li>
+                                <figure class="projects-img"> 
+                                        <div class="text-wrap">
+                                        <h3>Pig Game</h3>
+                                        </div>
+                                        <a href="projects/pig-game/index.html" target="_blank"><img src="ressources/img/dice.jpg"></a>
+                                </figure>
+                            </li>
+            </ul>
+
+        </section>
+    </div>
+    </div>
+
+    <section class="section-intro">
+        <div class="row">
+            <h2>INTROduction</h2>
+        </div>
+        <div class="row intro-text">
+            <div class="text-img">
+                <img src="ressources/imgcell/thumbs_up.jpg" class="img-of-me">
+            </div>
+            <p class="long-text">Salut toi,mon futur prof, ou autres qui sait? Premièrement, merci infiniment de prendre le temps de regarder mes rationalistes que j'ai codés avec beaucoup de temps et d'efforts . Je pensais avoir beaucoup plus de temps pour terminer ce site web, alors il manque encore beaucoup de contenus, de codes, d'images et d'icons. J'ai commencé cette page il y a quelques jours lorsque j'ai parlé avec vous au téléphone, alors que je croyais avoir jusqu'en septembre... Alors, il y a beaucoup d'espace blanche.Le site est pas "Responsive" et il manque beaucoup de style, mais j'ai fait de mon possible selon le temps qui m'a été accordé. Cela dit, je vais vous montrer plus ce que je sais faire dans des autres projets dans lesquels j'ai travaillés longtemps :) ! Merci d'etre compréhensif à ce sujet !
+
+
+                <ul class="about-me-list">
+                    <li><b>Mon nom :</b> Michael Lacroix</li>
+                    <li><b>Mon surnom : </b>Kenny </li>
+                    <li><b>Age :</b> 23 ans</li>
+                    <li><b>Passion :</b> La programmation</li>
+                    <li><b>Language etudier :</b> Html, Css, Javascript , c# , c++ , python , MySQL</li>
+                    <li><b>Logiciel utliser :</b> Visual Studio Code, Microsoft Visual Studio</li>
+                    <li><b>Autres connaissance :</b> Unity , Unreal Engine</li>
+                    <li><b>Force : </b>Back-End</li>
+                    <li><b>Faibless : </b>Front-end</li>
+                </ul>
+                <br><b>Pourquoi la programmation ?  :</b>&nbsp;  Tout simplement parce que c'est ma passion ! Je peux rester des heures devant mon écran d'ordinateur avec mes livres sur la programmation , à coder des applications ou tout simplement ce qui me passe par l'esprit . Vous voulez savoir pourquoi ? lisez la suite de ce chef d'oeuvre.
+            </p>
+
+        </div>
+        <div class="about-me-wrap">
+            <h2>À PROPOS DE MOI</h2>
+            <div class="row intro-text">
+                <p class="long-text">
+                        Je viens d'une petite ville de 145,690 habitants dans le nord du Quebec en Abitibi Témiscamingue qui se nomme <a href="https://en.wikipedia.org/wiki/Rouyn-Noranda"
+                        target="_blank">Rouyn-Noranda .</a>
+                        Je suis une personne très ouvert d'esprit et très intellectuel , je pourrais dire que j'aime me casser la tête et j'adore me poser des questions sur comment les choses fonctionnes.Voilà donc la raison principale pourquoi j'aime autant la programmation . Pour certaines personnes , la programmation est un métier comme les autres.Pour moi , la programmation est tout simplement un loisir. Dès que j'ai découvert l'informatique à l'âge de 13 ans, j'ai tout de suite été attiré par ce monde. J'ai aussi un grand côté artistique , je produis de la musiques style classics, ou bien music de film , avec Fruity Loops Studio 12.0 J'adore dessiner , jouer du piano , je suis très indépendant et j'aime être dans ma bulle (dans mon petit monde) Mais bon , de retour dans le vif du sujet :) 
+                         <img src="ressources/imgcell/me_thinking.jpg" class="img-of-me" id="me-thinking-img">
+                </p>
+                <p class="long-text about-me-text">
+                    <h3>Mon parcours maintenant!</h3>
+                    Du moment où j'ai possédé un ordinateur, j'ai tout de suite commencé à étudier la programmation, à ouvrir tous les fichiers sources de tout ce que je pouvais, je m'amusais avec l'outil d'inspection sur le navigateur et je pouvais passer des heures à essayer de tout comprendre et je voyais pas le temps passer ! Malheureusement, j'ai beaucoup de difficulté à me concentrer sur quelque chose que je n'aime pas...l'école! Je suis une personne très brillante, mais rester assis dans une classe à faire des trucs que je ne voyais pas l'utilité, ne m'intéressait pas. Mon rêve était d'aller au cegep en technique informatique, ensuite à l'Universiter en programmation jeux vidéo, mais malehureusement, mon niveau scolaire ne me le permettait pas.
+
+                </p>
+                <p class="long-text">Ayant pas la même mentalité et maturité qu'aujourd'hui, j'ai malheureusement abandonné ces rêves, car ils étaient  impossible pour moi. J'avais les talents et l'expérience, mais pour moi, aller à l'école pour faire de la philo, science et autre cours que je n'aime pas afin d'atteindre mon objectif , me semblait imaginable à mes yeux. J'avais l'impression de perdre mon temps... C'est à ce moment que j'ai decidé de changer de branche. J'ai donc  laisser la programmation de côter et j'ai décidé de suivre un DEP en extraction de minerai. J'ai travaillé 1 an dans ce domaine à un salaire de 80,000$ et + par année dès le début . J'etais heureux financièrement, mais je n'aimais pas ce que je faisais. Après longue réflexion et après la découverte de votre programme, j'ai decidé de tout lâcher et de tout miser ! Je crois qu'il faut prendre des risques et miser gros sur ce que l'on aime . J'ai donc decider de retourner habiter chez mes parents. Je travaille maintenant dans une épicerie à salaire minimum, 20h /semaine, pour me consacrer à la programmation . J'ai gagné beaucoup de maturité et j'ai decider de tout donner dans le domaine que j'aime et d'en faire un jour, un emploi professionnel !
+
+                </p>
+
+            </div>
+        </div>
+        <section class="img-section">
+        
+            <ul class="me-img-showcase">
+                <li>
+                    <figure class="my-setup-img-showcase"> <img src="ressources/imgcell/my_setup.jpg" width="600px"></figure>
+                </li>
+                <li>
+                        <figure class="my-setup-img-showcase"> <img src="ressources/imgcell/me_sit.jpg" width="350px"></figure>
+                    </li>
+                    <li>
+                            <figure class="my-setup-img-showcase">   <img src="ressources/imgcell/me_piano.jpg" width="350px"></figure>
+                        </li>
+            </ul>
+        </section>
+       
+
+    
+      
+            <h2>Mon experience</h2>
+            <div class="row intro-text">
+                <ul>
+                    <li>
+                        <p class="long-text">Stage de 1 an pour une compagnie de Domotic , j'etais dans l'entrepôt, mon boss était très occupé avec son boulot de domotic, donc il me laissait dans l'entrepôt et je m'occupais de monter / démonter des Ordinateurs . Des clients venaient parfois et me laissaient leurs ordinateurs. Cela dit, je faisais déjà le boulot d'un technicien en informatique à cet âge et j'ai adoré le côté technique autant que le côté logiciel !
+                            </p>
+                    </li>
+                    <li>
+                        <p class="long-text">Connaissance de base en programmation TRÈS BONNE . Voici les languages que j'ai déjà touché / étudier :
+                            <ul class="studied-language">
+                                <li>Html</li>
+                                <li>Css</li>
+                                <li>C / C++</li>
+                                <li>Python</li>
+                                <li>MySQL</li>
+                                <li>Javascript</li>
+                                <li>C#</li>
+                                <li>PHP</li>
+                                <li>Unity</li>
+                            </ul>
+                            Ça fait seulement quelque mois que j'apprends le HTML, CSS . Ma force est avec les languages back-end et en Javascript. Evidament, je ne me rappelle pas de tout par coeur, mais j'ai une grande facilité à coder en n'importe quel language, car j'ai beaucoup trop programmé durant ces dernières années et tous les languages se ressemblent, les synthax sont différentes . J'ai faits beaucoup d'Unity en C# , le plus gros de mon expérience vient de là. Au début, seulement le Back-End m'intéressait . Lorsque j'ai commencé la programmation web au début de l'été 2019, j'ai tout de suite adorée ! Ça fait seulement 2-3 mois que j'étudie le Javascript, HTML, Css . Maintenant, j'adore le front-end malgré le fait que j'ai toujours voulu coder un gros jeu vidéo, mais j'ai compris qu'avoir un bon site web pour attirer les gens et faire de la publicité était très important ! Donc, je veux me concentrer là-dessus tout en apprenant d'autres languages de programmations..
+                            .
+                        </p>
+                    </li>
+                </ul>
+
+            </div>
+            <h2>Pourquoi me prendre ?</h2>
+            <div class="row intro-text">
+                <p class="long-text">Je suis très persévérant, je donne toujours mon 100% dans ce que j'aime . Ça fait des années que je code pour le plaisir. Tout ce que je connais, j'ai appris par moi-même et je suis très discipliné . J'ai confiance en moi, je connais mon potentiel et je suis très autonome et débrouillard. Je ne manque jamais d'idée et je suis très productif :) . J'aime la programmation et j'espère que vous allez me donner une chance de me démarquer et me rendre loin dans ce domaine !
+
+                </p>
+            </div>
+
+            <h2>Mes sources / formations suivi</h2>
+            <div class="row intro-text">
+                <p class="long-text">Voici les sites web qui m'on beaucoup aider a progresser durant ses années :
+                    <ul class="source-list">
+                        <li><a href="https://www.w3schools.com/" target="_blank">W3schools</a></li>
+                        <li><a href="https://www.udemy.com/design-and-develop-a-killer-website-with-html5-and-css3/" target="_blank">Udemy (html/css)</a></li>
+                        <li><a href="https://www.udemy.com/the-complete-javascript-course/" target="_blank">Udemy (Js)</a></li>
+                        <li><a href=" https://stackoverflow.com/ " target="_blank">Stack Overflow</a></li>
+                        <li><a href=" https://www.amazon.ca/Web-Design-HTML-JavaScript-jQuery/dp/1118907442/ref=sr_1_1?crid=7WISDQKELY58&keywords=html+css+javascript&qid=1566787574&s=gateway&sprefix=html%2Caps%2C142&sr=8-1 " target="_blank">Livres front-end</a></li>
+                       
+                    </ul>
+                    Et quelques autres formations à moitié terminé sur d'autres languages ou pour des logiciels comme Unity .
+                </p>
+            </div>
+       
+    </section>
+
+   <footer>
+
+   </footer>
+
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
+</body>
+
+</html>

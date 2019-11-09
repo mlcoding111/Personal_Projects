@@ -1,0 +1,371 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    text-rendering: optimizeLegibility;
+    font-size: 18px;
+    height: 100%;
+    font-family: "montserrat";
+}
+/* ------------------ H1,H2,H3,H4,H5 ---------------- */
+
+h1,h2,h3,h4,h5,h6 {
+    letter-spacing: 1px;
+    word-spacing: 3px;   
+}
+h5:hover{
+    cursor: pointer;
+}
+h2{
+    font-weight: 400;
+    text-align: center;
+    padding: 50px;
+    color: rgb(49, 49, 49);   
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #c90008;
+    content: " ";
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3{
+    color: rgb(49, 49, 49);  
+    color: white; 
+    text-align: center;
+    transition: color 0.2s, font-size 0.2s;
+}
+
+h3:after{
+    display: block;
+    content: " ";
+    height: 2px;
+    width: 50px;
+    background-color: white; 
+    margin: 10px auto;
+}
+
+h5{
+    vertical-align: middle;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 200%;
+    position: absolute;
+}
+
+h5:hover{
+    pointer-events: none;
+}
+
+h4{
+    position: absolute;
+    font-weight: 600;
+    text-align: center;
+    color: #46627f;
+ /*   color: rgb(49, 49, 49);   */
+    font-size: 260%;    
+}
+
+
+/*
+h3:after{
+    content: " ";
+    width: 75px;
+    height: 2px;
+    background-color: #c90008;
+    display: block;
+    margin: 10px 25px;
+}
+
+h3:nth-child(1) {
+  
+}
+*/
+/* ------------------ ROW ---------------- */
+
+.row {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.box{
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 0 6px;
+    height: 350px;
+    padding: 2%;
+    display: block;
+    transition: transform 0.5s, opacity 0.5s;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+}
+
+.box img{
+    background-color: black;
+}
+
+.box:hover{
+    background-color: rgba(247, 0, 0, 0.8);  
+    transform: translateY(-15px) scale(1.05);
+    cursor: pointer;
+    opacity: 1;
+    
+}
+
+.box:hover h3 {
+    color: yellow;
+    font-size: 130%;
+}
+
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+    color: white;
+    text-align: justify; /* For Edge */  
+    letter-spacing: 1px;
+   
+}
+
+
+/* ------------------ HEADER ---------------- */
+
+
+header{
+    background-image: linear-gradient(rgba(0,0,0, 0.8), rgba(0, 0, 0, 0.7)), url("index.html/Ressources/img/backg2.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* ------------------ NAV ---------------- */
+.main-nav {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #a12121;
+    /*#a12121*/
+    margin: 0;
+    list-style-type: none;  
+    overflow: hidden;
+    height: 85px;    
+    position: fixed;
+    width: 100%;
+    font-size: 90%;
+    opacity: 0.8;
+    transition: opacity 0.5s;
+ /*   border: 1px solid white; */
+}
+
+.main-nav li:nth-of-type(5){
+    flex: 0 1 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+    margin-top: 50px;
+    
+}
+
+.main-nav:hover{
+    opacity: 1;
+}
+
+.main-nav li{
+    list-style: none;
+    float: right;
+    margin-top: 23px;   
+    padding: 10px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.main-nav a{
+    text-decoration: none;
+    display: block;
+    color: white;  
+    border-bottom: 2px solid rgba(255, 255, 255, 0); 
+    transition: border 0.3s, transform 0.3s; 
+}
+
+.main-nav a:hover{
+    transform: translateY(-2px);
+    border-bottom: 2px solid rgba(255, 255, 255, 1); 
+}
+
+.main-nav img{
+    float: right;
+    width: 60px;
+    padding: 10px;
+}
+
+
+#show-option{
+    color: white;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    margin-top: 15px;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    text-shadow: 2px 2px 1px #000;
+}
+
+#show-option:hover{
+    text-shadow: 2px 5px 2px #000;
+}
+
+#hide-option{
+    color: white;
+    cursor: pointer;
+    transition: font-size 0.3s ease-out;
+}
+
+#hide-option:hover{
+    font-size: 110%;
+}
+
+
+/* ------------------ INTRO ---------------- */
+
+.intro-text{
+    color: #fff;
+    font-size: 125%;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 150px 100px;
+}
+
+
+/* ------------------ BUTTONS ---------------- */
+
+.btn {
+    display: inline-block;
+    margin: 30px auto;
+    padding: 10px 30px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;  
+    border-radius: 200px;
+    font-weight: 300;
+    transition: all 0.2s;
+ 
+}
+
+.btn-ghost{
+    border: 1px solid #a70007;
+}
+
+.btn-ghost:hover{
+    background-color: #a70007;
+    border: 1px solid #a70007;
+    transform: translateY(2px);
+}
+
+.btn-full{
+    background-color: #c90008;
+    border: 1px solid #c90008;
+}
+
+.btn-full:hover{
+    background-color: #a70007;
+    transform: translateY(2px);
+}
+
+.intro-text a{
+    font-size: 80%;
+}
+
+/* ------------------ SECTIONS ---------------- */
+
+
+.hz{
+    background-color: red;
+}
+
+
+#kenny-logo
+{
+    position: fixed;
+ 
+    opacity: .8;
+   
+    
+    width: 300px;
+    padding: 1px;
+}
+
+
+#kenny-logo:hover{
+    opacity: 1;
+    
+}
+.header-wrap{
+    display: flex;
+ 
+}
+
+.header-intro{
+    width: 95%;
+    font-size: 30px;
+    font-weight: 400; 
+    color: white;
+    display: flex;
+    flex-direction: row;
+   /* background-color: rgba(128, 128, 128, 0.418); */
+   /* border: 2px solid white; */
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;   
+    height: 100vh;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+.header-intro>div{
+ /* border: 1px solid black; */
+}
+
+.tips{
+    margin: 40px;
+    align-items: center;
+    opacity: .8;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.tips img{
+    opacity: .5;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.tips:hover{
+    opacity: 1;
+    transform: scale(1.05);
+
+}
+
+
+/* ---------------------- LOGO & IMG ----------------------------*/
+
+#logo{
+    transition: transform 0.3s ease-out;
+}
+
+#logo:hover{
+   transform: scale(1.15);
+}
+

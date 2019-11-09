@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    text-rendering: optimizeLegibility;
+    font-size: 20px;
+    font-family: "montserrat";
+}
+
+h1{
+    text-align: center;
+}
+
+header{
+    background-image: url("energies.png");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
