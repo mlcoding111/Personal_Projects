@@ -43,6 +43,8 @@ The places were very limited and I was very motivated to be a part of it.
 At this point I knew nothing about web developement, I've only coded in C++ and C#.
 I learned html,css and javascript within a month and built this portfolio.
 
+This website is not responsive but I think its worth showcasing what I've been able to learn in a limited amount of time.
+
 <img src="https://puu.sh/J3oa9/613e450903.png" alt="Logo" >
 <p align="right">(<a href="#top">back to top</a>)</p>
 
